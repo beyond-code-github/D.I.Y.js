@@ -11,7 +11,6 @@ Basic use
 	(function (obj) {
 		var privateArray = [];		
 		obj.Constructor = function() {
-			
 			var pushToArray = function (item) { privateArray.push(item); }
 			var getFromArray = function (i) { return privateArray[i]; }
 			
