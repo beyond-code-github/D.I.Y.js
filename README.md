@@ -71,7 +71,7 @@ Container as a Dependency
 	
 	container.bindSingleton("diyContainer", container);
 
-Suggested Object Structure
+Example Object Graph
 --------------------------
 
 	// Define an object with a constructor
