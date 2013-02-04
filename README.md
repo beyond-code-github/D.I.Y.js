@@ -15,8 +15,8 @@ Basic use
 	// Instantiate
 	var instance = window.Arrayconsumer.Constructor.DIY();
 
-Continued example
------------------
+Suggested Object Structure
+--------------------------
 
 	// Define an object with a constructor
 	(function (obj) {
