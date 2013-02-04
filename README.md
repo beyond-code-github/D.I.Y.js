@@ -15,6 +15,48 @@ Basic use
 	// Instantiate
 	var instance = window.Arrayconsumer.Constructor.DIY();
 
+Singletons
+----------
+
+	var singleton = window.MySingleton.Constructor();
+
+	container.bindSingleton("mySingleton", singleton);
+	
+Dynamic Bindings
+----------------
+
+	var provideFlawedImplementation = false;
+
+	container.bindMethod("dynamicObject", function() {
+		if (provideFlawedImplementation) {
+			return window.FlawedObject.Constructor();
+		}
+		else {
+			return window.GoodObject.Constructor();
+		}
+		
+		provideFlawedImplementation = !provideFlawedImplementation;
+	});
+	
+Nested Dependencies
+-------------------
+
+	Yup.
+
+Multiple Containers
+-------------------
+
+	var defaultContainer = window.DIY.Container.New();
+	var anotherContainer = window.DIY.Container.New("another");
+	
+	defaultContainer.bind("dependency", window.SomeDependency.Constructor);
+	anotherContainer.bind("dependency", window.SomeOtherDependency.Constructor);
+	
+	// With default container;
+	var object1 = window.Object.Constructor.DIY();
+	// With another container
+	var object2 = window.Object.Constructor.DIY("another");
+
 Suggested Object Structure
 --------------------------
 
