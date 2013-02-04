@@ -1,7 +1,14 @@
 D.I.Y.js
 ========
 
-D.I.Y.js is an approach to Dependency Injection in Javascript. The y stands for "whY would you want to do that?"
+D.I.Y.js is an approach to Dependency Injection in Javascript, designed for use within Single Page browser applications. The framework solves a much smaller but much more annoying problem when compared to say Require.JS. 
+
+The 'Y' stands for "Why the f**k would you want to do that?"
+
+* Very lightweight
+* Helps you work with objects and instances, not files
+* Designed around coding style of JavaScript - The Good Parts
+* Usage will be familiar to server side developers
 
 Basic use
 ---------
