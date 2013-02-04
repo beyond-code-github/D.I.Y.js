@@ -6,6 +6,18 @@ D.I.Y.js is an approach to Dependency Injection in Javascript. The y stands for 
 Basic use
 ---------
 
+	// Set up the container
+	var container = window.DIY.Container.New();
+
+	// Bind your dependencies
+	container.bind("manipulator", window.ArrayManipulator.Constructor);
+	
+	// Instantiate
+	var instance = window.Arrayconsumer.Constructor.DIY();
+
+Continued example
+-----------------
+
 	// Define an object with a constructor
 	(function (obj) {
 		var privateArray = [];
@@ -40,14 +52,3 @@ Basic use
 		};
 		
 	})(window.ArrayConsumer = window.ArrayConsumer || {});
-
-
-	// Set up the container
-	var container = window.DIY.Container.New();
-
-	// Bind your dependencies
-	container.bind("manipulator", window.ArrayManipulator.Constructor);
-	
-	// Instantiate
-	var instance = window.Arrayconsumer.Constructor.DIY();
-	
