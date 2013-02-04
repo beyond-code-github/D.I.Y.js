@@ -64,8 +64,8 @@ Multiple Containers
 	// With another container
 	var object2 = window.Object.Constructor.DIY("another");
 	
-Inject container
-----------------
+Container as a Dependency
+-------------------------
 
 	var container = window.DIY.Container.New();
 	
