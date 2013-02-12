@@ -112,8 +112,6 @@ Example Object Graph
 			return object;
 		};
 		
-
-		
 	})(window.ArrayConsumer = window.ArrayConsumer || {});
 
 Use plain old functions
@@ -124,5 +122,4 @@ Use plain old functions
 	
 		second = manipulator.getFromArray[2];
 	
-	}).DIY();
 	}).DIY();
