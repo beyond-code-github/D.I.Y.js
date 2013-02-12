@@ -55,6 +55,10 @@
         container.bindSingleton = bindSingleton;
         container.bindMethod = bindMethod;
 
+        container.reset = function() {
+            mappings = {};
+        };
+
         container.getDependency = function(key) {
             var mapping = mappings[key];
             
