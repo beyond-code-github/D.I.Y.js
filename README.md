@@ -10,6 +10,11 @@ The 'Y' stands for "Why the f**k would you do it that way?"
 * Designed around coding style of JavaScript - The Good Parts
 * Usage will be familiar to server side developers
 
+Installation
+------------
+
+**Via NuGet:** PM> Install-Package D.I.Y.js
+
 Basic use
 ---------
 
@@ -72,7 +77,7 @@ Container as a Dependency
 	container.bindSingleton("diyContainer", container);
 
 Example Object Graph
---------------------------
+--------------------
 
 	// Define an object with a constructor
 	(function (obj) {
@@ -107,4 +112,17 @@ Example Object Graph
 			return object;
 		};
 		
+
+		
 	})(window.ArrayConsumer = window.ArrayConsumer || {});
+
+Use plain old functions
+-----------------------
+
+	var second;
+	(function (manipulator) {
+	
+		second = manipulator.getFromArray[2];
+	
+	}).DIY();
+	}).DIY();
